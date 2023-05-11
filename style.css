@@ -1,0 +1,813 @@
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 10px 5px;
+    position: sticky;
+    top: 0;
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a:hover {
+    background-color: #c5e58b;
+    color: black;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  .header a.active0 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .header a.active1 {
+    background-color: rgb(213, 123, 123);
+    color: rgb(0, 0, 0);
+    border-radius: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .header a.active2 {
+    background-color: rgb(235, 232, 137);
+    color: rgb(5, 4, 4);
+    border-radius: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .header a.active3 {
+    background-color: rgb(8, 109, 38);
+    color: white;
+    border-radius: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .header a.active4 {
+    background-color: rgb(129, 190, 110);
+    color: white;
+    border-radius: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+  }
+
+  .middlediv01 {
+    background-color: rgb(49, 49, 49);
+    color: white;
+  }
+
+  .middlediv01_content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 100%;
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    border-radius: 15px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    position: sticky;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .middlediv02 {
+    background-color: rgb(197, 241, 189);
+    color: rgb(0, 0, 0);
+  }
+
+  .insstl{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .middlediv03 {
+    background-color: rgb(222, 233, 134);
+    color: rgb(0, 0, 0);
+  }
+
+  .middlediv04 {
+    background-color: rgb(57, 57, 57);
+    
+  }
+
+  .middlediv05 {
+    background-color: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+  }
+
+  .middlediv06 {
+    background-color: rgb(113, 177, 205);
+    color: rgb(0, 0, 0);
+  }
+
+  .footerr{
+    padding-left: 25px;
+    padding-right: 25px;
+    
+  }
+
+  .footerr a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+
+  }
+
+  .ftright{
+    float: right;
+    
+  }
+
+  #foottt{
+    font-size: 14px;
+    
+  }
+
+  /* Dropdown*/
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    
+    
+  }
+
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+    
+  }
+
+  .header a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(78, 152, 94);
+    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #95b1d5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    visibility: visible;
+  }
+
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+    
+  }
+
+  .float1{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: left;
+    background-color: black;
+    color: white;
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float2{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: right;
+    background-color: rgb(91, 62, 62);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float3{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: left;
+    background-color: rgb(219, 196, 127);
+    color: black;
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float4{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: right;
+    background-color: rgb(240, 199, 199);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float5{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: left;
+    background-color: rgb(90, 63, 96);
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float6{
+    text-align: center;
+    height: 250px;
+    width: 600px;
+    float: right;
+    background-color: rgb(158, 142, 222);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float7{
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    float: left;
+    background-color: rgb(124, 198, 135);
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float8{
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    float: right;
+    background-color: rgb(222, 142, 207);
+    color: rgb(3, 3, 3);
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+  
+  .float9{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #99d6ff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float10{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#ffe6ff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float11{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #2d8659;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float12{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color: #ffaa80;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float13{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #ffccff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float14{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#ccffcc;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float15{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #ffffcc;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float16{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color: #f2d9f2;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float17{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #b59bb5;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float18{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#c1d64d;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float19{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #cfa25a;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float20{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color: #d787d7;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float21{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #7951df;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float22{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#ffd5cc;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float23{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #e1ffcc;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float24{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color: #e9bbd5;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float25{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #ccffff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float26{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#00bfff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float27{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #00cc99;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float28{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color:#df80ff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float29{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #7951df;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float30{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#ffb84d;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float31{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#c2c2d6;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float32{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color:#4d4dff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float33{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color: #d4d4aa;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+  .float34{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:#e6b3b3;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float35{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: left;
+    background-color:  #d24dff;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 15px;
+  }
+
+
+  .float36{
+    text-align: center;
+    height: 150px;
+    width: 250px;
+    float: right;
+    background-color: #ccffcc;
+    color: rgb(3, 3, 3);
+    
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+  }
+
+  .float1:hover, .float2:hover, .float3:hover, .float4:hover, .float5:hover, .float6:hover, .float7:hover, .float8:hover {
+    background-color: #117708;
+  }
+
+  .float9:hover, .float10:hover, .float11:hover, .float12:hover, .float13:hover, .float14:hover, .float15:hover, .float16:hover{
+    background-color: #117708;
+
+  }
+
+  .float17:hover, .float18:hover, .float19:hover, .float20:hover, .float21:hover, .float22:hover, .float23:hover, .float24:hover {
+    background-color: #117708;
+  }
+
+  .float25:hover, .float26:hover, .float27:hover, .float28:hover, .float29:hover, .float30:hover, .float31:hover, .float32:hover,.float33:hover, .float34:hover, .float35:hover, .float36:hover {
+    background-color: #117708;
+  }
+
+
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+  /*slider image*/
+  
+  .mySlides {
+    display:none;
+  
+  }
+  .ins{
+    position: absolute;
+    width: 100%;
+    top:6750px;
+    
+  }
+
